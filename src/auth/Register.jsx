@@ -43,12 +43,12 @@ export const Register = (props) => {
                 <label htmlFor="password">Password</label>
                 <div className="password-input-container">
                     <input value={password} onChange={(e) => setPassword(e.target.value)} type={showPassword ? "text" : "password"} placeholder="********" id="password" name="password" />
-                    <button style={{height: "70%", transform: "translateY(10%)"}} type="button" onClick={togglePasswordVisibility}>{showPassword ? "Hide" : "Show"}</button>
+                    <button type="button" onClick={togglePasswordVisibility}>{showPassword ? "Hide" : "Show"}</button>
                 </div>
                 <label htmlFor="confirmPassword">Confirm Password</label>
                 <div className="password-input-container">
                     <input value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} type={showConfirmPassword ? "text" : "password"} placeholder="********" id="confirmPassword" name="confirmPassword" />
-                    <button style={{height: "70%", transform: "translateY(10%)"}} type="button" onClick={toggleConfirmPasswordVisibility}>{showConfirmPassword ? "Hide" : "Show"}</button>
+                    <button type="button" onClick={toggleConfirmPasswordVisibility}>{showConfirmPassword ? "Hide" : "Show"}</button>
                 </div>
                 <button type="submit">Register</button>
             </form>
