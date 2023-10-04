@@ -50,3 +50,9 @@ button {
   color: white;
   text-decoration: underline;
 }
+
+.error-message {
+  color: #ff0000; /* Red color for error messages */
+  font-size: 14px; /* Font size of the error message */
+  margin-top: 5px; /* Margin space at the top of the error message */
+}
